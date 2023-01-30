@@ -18,9 +18,9 @@ function Counter() {
 
     
     
-    <Segment placeholder  >
+    <Segment >
 
-      <Grid columns={2} style={{ justifyContent: 'center' }} >
+      <Grid columns={2} style={{ textAlign:'center', justifyContent:'center'}}> 
        
         <Grid.Row >
           <Grid.Column>

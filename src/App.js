@@ -5,15 +5,14 @@ import 'semantic-ui-css/semantic.min.css'
 import Counter from "./components/Counter"
 function App() {
   return (
+    <>
     <div className="App">
-    <div style={{padding:'40px',display: 'flex', justifyContent: 'center' }}>
-      <Counter></Counter>
-    </div> 
-       <h4> Name: Isha Kunwar</h4>
-        
-        <h4>Registration No. : 12011399</h4>
+    <Counter></Counter>    
     </div>
-    
+    <div className='App'>
+    <h5> Name: Isha Kunwar --  Registration No. : 12011399</h5>
+    </div>
+     </>
   );
 }
 
