@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Card, Grid, Segment,Icon, Image  } from 'semantic-ui-react'
+import { Button,  Grid, Segment } from 'semantic-ui-react'
 
 function Counter() {
   const [count, setCount] = useState(0)
@@ -16,11 +16,12 @@ function Counter() {
 
   return (
 
-    <div style={{padding:'40px',display: 'flex', justifyContent: 'center' }}>
+    
+    
     <Segment placeholder  >
-   
+
+      <Grid columns={2} style={{ justifyContent: 'center' }} >
        
-      <Grid columns={2} style={{ justifyContent: 'center', margin:'5px' }} >
         <Grid.Row >
           <Grid.Column>
             <div>
@@ -30,9 +31,7 @@ function Counter() {
           </Grid.Column>
         </Grid.Row>
        
-        <Grid.Row
-        style={{ marginTop:'5%' , marginBottom:'5%'  }}
-        >
+        <Grid.Row >
 
           <Grid.Column>
             <Button color='green' onClick={handleIncrement}>Increment</Button>
@@ -45,13 +44,10 @@ function Counter() {
           </Grid.Column>
         </Grid.Row>
 
-        
       </Grid>
 
     </Segment>
     
-
-    </div>
   )
 }
 
